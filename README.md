@@ -81,7 +81,23 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 🧾 **Output Images**:
 
-add the pictures
+🧾 **Output Images**:
+
+<div align="center">
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Confusion_Matrix.png" alt="Image 1" width="45%" style="margin: 10px;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Dice_Coefficient.png" alt="Image 2" width="45%" style="margin: 10px;" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Hitmap.png" alt="Image 3" width="45%" style="margin: 10px;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Loss_curve.png" alt="Image 4" width="45%" style="margin: 10px;" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/ROC_curve.png" alt="Image 5" width="45%" style="margin: 10px;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Recall_curve.png" alt="Image 6" width="45%" style="margin: 10px;" />
+</div>
+
 
 
 ---
