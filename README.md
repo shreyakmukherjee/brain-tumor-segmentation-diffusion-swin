@@ -127,12 +127,16 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 ## ⚠️ Limitations & Future Work
 
+<div align="center">
+
 | Current Challenge                      | Future Direction                                                        |
 |----------------------------------------|--------------------------------------------------------------------------|
 | Requires high-quality MRI inputs       | Integrate super-resolution preprocessing or denoising techniques         |
 | 2D slice-wise segmentation only        | Extend to full 3D volumetric segmentation                                |
 | Focused on a single modality (T1)      | Expand to multi-modal fusion (T1, T2, FLAIR)                             |
 | High compute demand during training    | Apply model pruning or distillation for edge deployment                  |
+
+</div>
 
 ---
 
