@@ -79,7 +79,7 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 </div>
 
 
-🧾 **Confusion Matrix**:
+🧾 **Output Images**:
 
 add the pictures
 
