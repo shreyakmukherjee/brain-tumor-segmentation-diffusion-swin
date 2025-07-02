@@ -81,8 +81,6 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 🧾 **Output Images**:
 
-🧾 **Output Images**:
-
 <div align="center">
   <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Confusion_Matrix.png" alt="Image 1" width="45%" style="margin: 10px;" />
   <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Dice_Coefficient.png" alt="Image 2" width="45%" style="margin: 10px;" />
