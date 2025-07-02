@@ -102,12 +102,17 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 ## 🌟 Innovations
 
+
+<div align="center">
+
 | Component              | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | Diffusion Module       | Enhances low-contrast features by simulating noise removal and reconstruction. |
 | Swin Transformer       | Provides attention across spatial regions for better boundary detection.     |
 | Hybrid Architecture    | Combines CNN speed with transformer precision for medical segmentation.      |
 | Gradient Checkpointing | Reduces memory usage to allow larger batch sizes during training.            |
+
+</div>
 
 ---
 
