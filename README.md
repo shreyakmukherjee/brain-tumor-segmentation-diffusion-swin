@@ -55,12 +55,18 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 ## ⚙️ Training Overview
 
-- **Loss Function**: BCE + Dice hybrid  
-- **Optimizer**: AdamW (lr = 1e-4, weight decay = 1e-4)  
-- **Scheduler**: OneCycleLR  
-- **Epochs**: 50 (with early stopping)  
-- **Mixed Precision**: Enabled via `autocast` and `GradScaler`  
-- **Device**: CUDA-enabled GPU  
+<div align="center">
+
+| Component         | Details                                              |
+|-------------------|------------------------------------------------------|
+| **Loss Function** | BCE + Dice hybrid                                   |
+| **Optimizer**     | AdamW (lr = 1e-4, weight decay = 1e-4)               |
+| **Scheduler**     | OneCycleLR                                           |
+| **Epochs**        | 50 (with early stopping)                            |
+| **Mixed Precision** | Enabled via `autocast` and `GradScaler`           |
+| **Device**        | CUDA-enabled GPU                                     |
+
+</div>
 
 ---
 
