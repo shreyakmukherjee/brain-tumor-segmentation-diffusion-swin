@@ -122,13 +122,77 @@ add the pictures
 ---
 
 
+## 🚀 How to Execute This Project
+
+Follow the steps below to clone and run this project on your machine:
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/brain-tumor-segmentation.git
+cd brain-tumor-segmentation
+```
+
+---
+
+### 2️⃣ Install Required Libraries
+
+Make sure Python 3.8+ is installed. Then install the dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+✅ All required packages (including PyTorch, torchvision, timm, albumentations, etc.) are listed in the `requirements.txt`.
+
+---
+
+### 3️⃣ Download the Pretrained Model
+
+Before running the app, manually download the trained model weights from Google Drive:  
+🔗 **[Download brain_tumor_model.pth](https://drive.google.com/file/d/1qWyeTUFHzbaq1ELvTxrW46USQ1Ll_Zrs/view?usp=sharing)**
+
+Place the downloaded `brain_tumor_model.pth` file in the root directory of the project like so:
+
+```
+brain_tumor_model.pth
+```
+
+---
+
+### 4️⃣ Run the Streamlit App
+
+```bash
+streamlit run app.py
+```
+
+- Upload an MRI brain scan (`.jpg`, `.png`)
+- Click **🔍 Segment Tumor**
+- View original, mask, and overlay results center-aligned and ready for PDF export
+
+---
+
+## 📂 Project Structure
+
+```bash
+.
+├── app.py                        # Streamlit UI
+├── brain-tumor-detection.ipynb  # Model training notebook
+├── brain_tumor_model.pth        # [Download from Google Drive]
+├── requirements.txt             # Dependencies
+├── README.md                    # Project overview
+└── Brain Tumor Segmentation.pdf # Project report
+```
+
 ---
 
 ## 🙌 Acknowledgements
 
-- 📊 Dataset by Mateusz Buda on [Kaggle](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)  
-- ⚙️ Frameworks: PyTorch, Albumentations, timm, and torchvision  
-- 💻 CUDA for GPU acceleration  
+📊 Dataset by [Mateusz Buda on Kaggle](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation)  
+⚙️ Frameworks: **PyTorch**, **Albumentations**, **timm**, **torchvision**  
+💻 CUDA for GPU acceleration
 
 ---
 
@@ -137,11 +201,8 @@ add the pictures
 **Shreyak Mukherjee**  
 📧 shreyakmukherjeedgp@gmail.com  
 📍 Durgapur, West Bengal  
-📱 +91-9832188947  
+📱 +91-9832188947
 
----
-
-⭐ *If this project helped you, consider giving it a star on GitHub!*
 
 
 
