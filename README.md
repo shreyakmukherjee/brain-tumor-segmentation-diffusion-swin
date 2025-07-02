@@ -66,7 +66,7 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 ## 📊 Evaluation Metrics
 
-<p align="center">
+<div align="center">
 
 | Metric         | Score |
 |----------------|--------|
@@ -76,7 +76,8 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 | 🔁 Recall      | 0.94   |
 | 🧮 Accuracy    | 0.98   |
 
-</p>
+</div>
+
 
 🧾 **Confusion Matrix**:
 
