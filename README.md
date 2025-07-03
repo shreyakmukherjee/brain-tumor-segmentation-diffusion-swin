@@ -1,5 +1,6 @@
 
-# 🧠 Brain Tumor Segmentation using Diffusion-Augmented Swin Transformer
+<h1 align="center">🧠 Brain Tumor Segmentation using Diffusion-Augmented Swin Transformer</h1>
+
 
 
 > <em>"Combining CNN efficiency, diffusion robustness, and transformer intelligence for next-gen medical imaging."</em>
