@@ -53,55 +53,86 @@ Lightweight decoder projects features into a single-channel binary segmentation 
 
 ---
 
-## ⚙️ Training Overview
-
+<h2>⚙️ Training Overview &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📊 Evaluation Metrics</h2>
 <div align="center">
+<table>
+  <tr>
+    <td>
 
-| Component         | Details                                              |
-|-------------------|------------------------------------------------------|
-| **Loss Function** | BCE + Dice hybrid                                   |
-| **Optimizer**     | AdamW (lr = 1e-4, weight decay = 1e-4)               |
-| **Scheduler**     | OneCycleLR                                           |
-| **Epochs**        | 50 (with early stopping)                            |
-| **Mixed Precision** | Enabled via `autocast` and `GradScaler`           |
-| **Device**        | CUDA-enabled GPU                                     |
+<!-- Left Table -->
+<b>⚙️ Training Overview</b>
 
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr><th>Component</th><th>Details</th></tr>
+  <tr><td>Loss Function</td><td>BCE + Dice hybrid</td></tr>
+  <tr><td>Optimizer</td><td>AdamW (lr = 1e-4, weight decay = 1e-4)</td></tr>
+  <tr><td>Scheduler</td><td>OneCycleLR</td></tr>
+  <tr><td>Epochs</td><td>50 (with early stopping)</td></tr>
+  <tr><td>Mixed Precision</td><td><code>autocast</code> + <code>GradScaler</code></td></tr>
+  <tr><td>Device</td><td>CUDA-enabled GPU</td></tr>
+</table>
+
+  </td>
+    <td style="width: 40px;"></td>
+  <td>
+
+<!-- Right Table -->
+<b>📊 Evaluation Metrics</b>
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <tr><th>Metric</th><th>Score</th></tr>
+  <tr><td>🎯 Dice</td><td><b>0.92</b></td></tr>
+  <tr><td>📏 IoU</td><td><b>0.86</b></td></tr>
+  <tr><td>🎯 Precision</td><td><b>0.89</b></td></tr>
+  <tr><td>🔁 Recall</td><td><b>0.94</b></td></tr>
+  <tr><td>🧮 Accuracy</td><td><b>0.98</b></td></tr>
+</table>
+
+  </td>
+  </tr>
+</table>
+</div>
+
+
+🧾 **Output Images**
+
+---
+
+### 🧠 Brain MRI Output 1
+<div align="center">
+  <img src="https://raw.githubusercontent.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/main/Images/Output_image_1.png" alt="Tumor Output 1" width="90%" style="margin: 15px auto; object-fit: contain;" />
 </div>
 
 ---
 
-## 📊 Evaluation Metrics
-
+### 🧠 Brain MRI Output 2
 <div align="center">
-
-| Metric         | Score |
-|----------------|--------|
-| 🎯 Dice        | 0.92   |
-| 📏 IoU         | 0.86   |
-| 🎯 Precision   | 0.89   |
-| 🔁 Recall      | 0.94   |
-| 🧮 Accuracy    | 0.98   |
-
+  <img src="https://raw.githubusercontent.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/main/Images/Output_image_2.png" alt="Tumor Output 2" width="90%" style="margin: 15px auto; object-fit: contain;" />
 </div>
 
+---
 
-🧾 **Output Images**:
-
+### 📊 Confusion Matrix & Hitmap
 <div align="center">
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Confusion_Matrix.png" alt="Image 1" width="45%" style="margin: 10px;" />
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Dice_Coefficient.png" alt="Image 2" width="45%" style="margin: 10px;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/Confusion_Matrix.png?raw=true" alt="Confusion Matrix" width="45%" style="margin: 15px; object-fit: contain;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/Hitmap.png?raw=true" alt="Hitmap" width="45%" style="margin: 15px; object-fit: contain;" />
 </div>
 
+---
+
+### 📈 Dice Coefficient & Loss Curve
 <div align="center">
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Hitmap.png" alt="Image 3" width="45%" style="margin: 10px;" />
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Loss_curve.png" alt="Image 4" width="45%" style="margin: 10px;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/Dice_Coefficient.png?raw=true" alt="Dice Coefficient" width="45%" style="margin: 15px; object-fit: contain;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/Loss_curve.png?raw=true" alt="Loss Curve" width="45%" style="margin: 15px; object-fit: contain;" />
 </div>
 
-<div align="center">
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/ROC_curve.png" alt="Image 5" width="45%" style="margin: 10px;" />
-  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/09ce25befedc627331d3eec924ee9658131db843/Images/Recall_curve.png" alt="Image 6" width="45%" style="margin: 10px;" />
-</div>
+---
 
+### 📉 ROC & Recall Curves
+<div align="center">
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/ROC_curve.png?raw=true" alt="ROC Curve" width="45%" style="margin: 15px; object-fit: contain;" />
+  <img src="https://github.com/shreyakmukherjee/brain-tumor-segmentation-diffusion-swin/blob/main/Images/Recall_curve.png?raw=true" alt="Recall Curve" width="45%" style="margin: 15px; object-fit: contain;" />
+</div>
 
 
 ---
